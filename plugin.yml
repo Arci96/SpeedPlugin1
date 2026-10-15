@@ -1,0 +1,19 @@
+name: SpeedPlugin
+version: '${project.version}'
+main: de.speedplugin.SpeedPlugin
+api-version: '1.21'
+description: Aendert die Geh- und Sprintgeschwindigkeit (Stufe 0-10)
+
+commands:
+  speed:
+    description: Setzt deine Geschwindigkeit (0-10)
+    usage: /speed <0-10> [Spieler]
+    permission: speedplugin.use
+
+permissions:
+  speedplugin.use:
+    description: Erlaubt /speed fuer sich selbst
+    default: op
+  speedplugin.others:
+    description: Erlaubt /speed fuer andere Spieler
+    default: op
